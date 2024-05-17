@@ -33,6 +33,9 @@ git clone https://github.com/AHMETZAFERSAGLIK/ICT4D_IVR
 2. You can access the storage account through this [storage account](https://portal.azure.com/#@vunl.onmicrosoft.com/resource/subscriptions/0f8c043b-7d9a-4be5-99e2-265b83fdd0d3/resourceGroups/vu_voice_app_rsrc/providers/Microsoft.Storage/storageAccounts/vuvoiceappstorage/containers) blob storage. Inside you will find a container named `voiceblob`.
 3. Upload the AI-generated voice recordings to this container. Ensure the container is set to public access.
 
+   ![image](https://github.com/AHMETZAFERSAGLIK/ICT4D_IVR/assets/69164622/25057668-4943-4235-b90e-4ca20dc4eadd)
+
+
 ### 3. Update the VoiceXML File
 
 Ensure the `vxml` file in your repository points to the correct URLs of the uploaded audio files. The current setup uses the following structure:
