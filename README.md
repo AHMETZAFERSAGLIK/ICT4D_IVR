@@ -24,13 +24,13 @@ Before setting up the IVR system, ensure you have the following:
 Clone this repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/AHMETZAFERSAGLIK/ICT4D_IVR.git
+git clone https://github.com/AHMETZAFERSAGLIK/ICT4D_IVR
 ```
 
 ### 2. Upload Audio Files to Azure Blob Storage
 
 1. Navigate to the Azure portal.
-2. Go to your Blob Storage account and open the container named `voiceblob`.
+2. You can access the storage account through this [storage account](https://portal.azure.com/#@vunl.onmicrosoft.com/resource/subscriptions/0f8c043b-7d9a-4be5-99e2-265b83fdd0d3/resourceGroups/vu_voice_app_rsrc/providers/Microsoft.Storage/storageAccounts/vuvoiceappstorage/containers). Blob Storage account and open the container named `voiceblob`.
 3. Upload the AI-generated voice recordings to this container. Ensure the container is set to public access.
 
 ### 3. Update the VoiceXML File
