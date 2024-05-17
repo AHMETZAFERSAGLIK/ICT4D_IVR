@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.1">
+    <menu id="mainMenu" dtmf="true">
+        <prompt>
+            <audio src="https://vuvoiceappstorage.blob.core.windows.net/voiceblob/english_select_language.wav"/>
+            <audio src="https://vuvoiceappstorage.blob.core.windows.net/voiceblob/french_select_language.wav"/>
+            <audio src="https://vuvoiceappstorage.blob.core.windows.net/voiceblob/Bambara_select_language.wav"/>
+        </prompt>
+        <choice next="#englishMenu" dtmf="1"/>
+        <choice next="#frenchMenu" dtmf="2"/>
+        <choice next="#bambaraMenu" dtmf="3"/>
+    </menu>
+    <menu id="englishMenu" dtmf="true">
+        <prompt>
+            <audio src="https://vuvoiceappstorage.blob.core.windows.net/voiceblob/selected_English.wav"/>
+        </prompt>
+        <choice next="#cultivationForm" dtmf="1"/>
+        <choice next="#plantingForm" dtmf="2"/>
+        <choice next="#preventionForm" dtmf="3"/>
+    </menu>
+    <form id="cultivationForm">
+        <block>
+            <prompt>
+                <audio src="https://vuvoiceappstorage.blob.core.windows.net/voiceblob/selected_cultivation.wav"/>
+            </prompt>
+        </block>
+    </form>
+    <form id="plantingForm">
+        <block>
+            <prompt>
+                <audio src="https://vuvoiceappstorage.blob.core.windows.net/voiceblob/selected_planting.wav"/>
+            </prompt>
+        </block>
+    </form>
+    <form id="preventionForm">
+        <block>
+            <prompt>
+                <audio src="https://vuvoiceappstorage.blob.core.windows.net/voiceblob/selected_prevention.wav"/>
+            </prompt>
+        </block>
+    </form>
+    <menu id="frenchMenu" dtmf="true">
+        <prompt>
+            <audio src="https://vuvoiceappstorage.blob.core.windows.net/voiceblob/you_have_selected_french.wav"/>
+        </prompt>
+        <choice next="#cultivationFormFrench" dtmf="1"/>
+        <choice next="#plantingFormFrench" dtmf="2"/>
+        <choice next="#preventionFormFrench" dtmf="3"/>
+    </menu>
+    <form id="cultivationFormFrench">
+        <block>
+            <prompt>
+                <audio src="https://vuvoiceappstorage.blob.core.windows.net/voiceblob/cultivation_french.wav"/>
+            </prompt>
+        </block>
+    </form>
+    <form id="plantingFormFrench">
+        <block>
+            <prompt>
+                <audio src="https://vuvoiceappstorage.blob.core.windows.net/voiceblob/planting_french.wav"/>
+            </prompt>
+        </block>
+    </form>
+    <form id="preventionFormFrench">
+        <block>
+            <prompt>
+                <audio src="https://vuvoiceappstorage.blob.core.windows.net/voiceblob/prevention_french.wav"/>
+            </prompt>
+        </block>
+    </form>
+    <menu id="bambaraMenu" dtmf="true">
+        <prompt>
+            <audio src="https://vuvoiceappstorage.blob.core.windows.net/voiceblob/You_have_selected_bambara.wav"/>
+        </prompt>
+        <choice next="#cultivationFormBambara" dtmf="1"/>
+        <choice next="#plantingFormBambara" dtmf="2"/>
+        <choice next="#preventionFormBambara" dtmf="3"/>
+    </menu>
+    <form id="cultivationFormBambara">
+        <block>
+            <prompt>
+                <audio src="https://vuvoiceappstorage.blob.core.windows.net/voiceblob/You_have_selected_cultivation_bambara.wav"/>
+            </prompt>
+        </block>
+    </form>
+    <form id="plantingFormBambara">
+        <block>
+            <prompt>
+                <audio src="https://vuvoiceappstorage.blob.core.windows.net/voiceblob/You_have_selected_planting_bambara.wav"/>
+            </prompt>
+        </block>
+    </form>
+    <form id="preventionFormBambara">
+        <block>
+            <prompt>
+                <audio src="https://vuvoiceappstorage.blob.core.windows.net/voiceblob/You_have_selected_prevention_bambara.wav"/>
+            </prompt>
+        </block>
+    </form>
+</vxml>
