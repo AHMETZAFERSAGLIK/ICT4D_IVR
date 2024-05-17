@@ -37,24 +37,31 @@ git clone https://github.com/AHMETZAFERSAGLIK/ICT4D_IVR.git
 
 Ensure the `vxml` file in your repository points to the correct URLs of the uploaded audio files. The current setup uses the following structure:
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<vxml version="2.1">
-    <menu id="mainMenu" dtmf="true">
-        <prompt>
-            <audio src="https://<your-storage-account>.blob.core.windows.net/voiceblob/english_select_language.wav"/>
-            <audio src="https://<your-storage-account>.blob.core.windows.net/voiceblob/french_select_language.wav"/>
-            <audio src="https://<your-storage-account>.blob.core.windows.net/voiceblob/Bambara_select_language.wav"/>
-        </prompt>
-        <choice next="#englishMenu" dtmf="1"/>
-        <choice next="#frenchMenu" dtmf="2"/>
-        <choice next="#bambaraMenu" dtmf="3"/>
-    </menu>
-    <!-- Additional menus and forms here -->
-</vxml>
+```<vxml version="2.1">
+<script id="eppiocemhmnlbhjplcgkofciiegomcon"/>
+<script/>
+<script/>
+<menu id="mainMenu" dtmf="true">
+<prompt>
+<audio src="https://vuvoiceappstorage.blob.core.windows.net/voiceblob/english_select_language.wav"/>
+<audio src="https://vuvoiceappstorage.blob.core.windows.net/voiceblob/french_select_language.wav"/>
+<audio src="https://vuvoiceappstorage.blob.core.windows.net/voiceblob/Bambara_select_language.wav"/>
+</prompt>
+<choice next="#englishMenu" dtmf="1"/>
+<choice next="#frenchMenu" dtmf="2"/>
+<choice next="#bambaraMenu" dtmf="3"/>
+</menu>
+<menu id="englishMenu" dtmf="true">
+<prompt>
+<audio src="https://vuvoiceappstorage.blob.core.windows.net/voiceblob/selected_English.wav"/>
+</prompt>
+<choice next="#cultivationForm" dtmf="1"/>
+<choice next="#plantingForm" dtmf="2"/>
+<choice next="#preventionForm" dtmf="3"/>
+</menu>...
 ```
 
-Replace `<your-storage-account>` with the actual name of your Azure storage account.
+
 
 ## Usage
 
