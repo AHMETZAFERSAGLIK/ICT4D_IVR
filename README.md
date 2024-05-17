@@ -1,5 +1,4 @@
 # ICT4D_IVR
-To create comprehensive GitHub documentation for the VoiceXML application, we'll include the following sections: Introduction, Prerequisites, Setup, Usage, VoiceXML File Explanation, Azure Blob Storage Integration, and Updating Messages. We'll use the information provided to structure this documentation.
 
 ### VoiceXML IVR System Documentation
 
@@ -71,13 +70,18 @@ Ensure the `vxml` file in your repository points to the correct URLs of the uplo
 ### 1. Deploy the VoiceXML Application
 
 1. Deploy the `vxml` file to your VoiceXML platform.
-2. Ensure your IVR system is configured to use the deployed `vxml` file.
+2. Ensure your IVR system is configured to use the deployed `vxml` file. [platform](https://evolution.voxeo.com/)
 
-### 2. Interact with the IVR System
+![image](https://github.com/AHMETZAFERSAGLIK/ICT4D_IVR/assets/69164622/1f089145-f30b-4bff-801a-032a27787ea1)
+
+
+### 2. Interact with the IVR System 
 
 1. Dial into the IVR system.
 2. Follow the prompts to select your preferred language.
 3. Navigate through the options to receive information on Artemisia cultivation, planting instructions, and disease prevention.
+
+PIN for contacting application: 9996100814
 
 ## VoiceXML File Explanation
 
@@ -117,14 +121,7 @@ This documentation provides a detailed guide for setting up and maintaining the 
 
 The following diagram illustrates the user interaction flow within the IVR system:
 
-![IVR System Interaction Flow](https://path-to-your-diagram.png)
+![image](https://github.com/AHMETZAFERSAGLIK/ICT4D_IVR/assets/69164622/8be1624f-594f-4a9f-8749-2d5036e21c1c)
 
-## Azure Blob Storage Screenshot
-
-The following screenshot shows the `voiceblob` container in Azure Blob Storage:
-
-![Azure Blob Storage](https://path-to-your-screenshot.png)
-
----
 
 Feel free to reach out if you have any questions or need further assistance.
