@@ -24,7 +24,7 @@ Before setting up the IVR system, ensure you have the following:
 Clone this repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/your-repo/voicexml-ivr-system.git
+git clone https://github.com/AHMETZAFERSAGLIK/ICT4D_IVR.git
 ```
 
 ### 2. Upload Audio Files to Azure Blob Storage
